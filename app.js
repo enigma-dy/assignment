@@ -13,7 +13,7 @@ const rl = readline.createInterface({
 const askQuestion = (query) =>
   new Promise((resolve) => rl.question(query, resolve));
 
-const runCalculator = async () => {
+const Calculator = async () => {
   try {
     const username = await askQuestion("Enter your username: ");
     const operation = await askQuestion(
@@ -64,4 +64,4 @@ const runCalculator = async () => {
   }
 };
 
-runCalculator();
+Calculator();
